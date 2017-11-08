@@ -1,5 +1,6 @@
 require 'httparty'
 
-response = HTTParty.get('http://setgetgo.com/randomword/get.php?len=6')
+10.times do
+  puts HTTParty.get('http://setgetgo.com/randomword/get.php?len=6')
 
-puts response
+end
